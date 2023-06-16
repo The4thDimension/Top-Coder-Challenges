@@ -1,0 +1,8 @@
+N * N Grid
+Either wall or ball
+Swap orthogonally adjacent balls
+Maximise number of components, g
+containing k balls
+while minimizing number of turns, t
+score = g * P - t
+P is a constant
