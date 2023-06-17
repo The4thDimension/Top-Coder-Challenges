@@ -15,12 +15,17 @@ i = 0
 moves = 0
 numMoves = 20
 N2 = (N-1)*(N-1)
-print('Test Case - 1\n\n\n')
-print(N)
-print(C)
-print(K)
-print(P)
-print(grid)
+
+with open('testFile.txt', 'w') as f:
+    f.write('Test Case - 1\n\n\n')
+    # f.write(N)
+    # f.write(C)
+    # f.write(K)
+    # f.write(P)
+    f.write(str(grid))
+
+
+
 # print(numMoves)
 # while moves < numMoves:
 
