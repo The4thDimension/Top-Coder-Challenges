@@ -16,31 +16,32 @@ moves = 0
 numMoves = 20
 N2 = (N-1)*(N-1)
 
-with open('testFile.txt', 'w') as f:
-    f.write('Test Case - 1\n\n\n')
-    # f.write(N)
-    # f.write(C)
-    # f.write(K)
-    # f.write(P)
-    f.write(str(grid))
+# with open('testFile.txt', 'w') as f:
+#     f.write('Test Case - 1\n\n\n')
+#     f.write(N)
+#     f.write(C)
+#     f.write(K)
+#     f.write(P)
+#     f.write(str(grid))
 
 
 
-# print(numMoves)
-# while moves < numMoves:
+print(numMoves)
+while moves < numMoves:
 
-#   num=(i*8009+104729)%N2
-#   r=num//(N-1)
-#   c=num%(N-1)
-#   i+=1
+  num=(i*8009+104729)%N2
+  print(num)
+  r=num//(N-1)
+  c=num%(N-1)
+  i+=1
 
-#   if grid[r][c]==0: continue
+  if grid[r][c]==0: continue
 
-#   if i%2==1 and grid[r][c+1]!=0:
-#     print(r,c,r,c+1)
-#     moves+=1
-#   elif i%2==0 and grid[r+1][c]!=0:
-#     print(r,c,r+1,c)
-#     moves+=1
+  if i%2==1 and grid[r][c+1]!=0:
+    print(r,c,r,c+1)
+    moves+=1
+  elif i%2==0 and grid[r+1][c]!=0:
+    print(r,c,r+1,c)
+    moves+=1
 
 sys.stdout.flush()
